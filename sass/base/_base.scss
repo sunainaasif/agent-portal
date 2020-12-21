@@ -7,6 +7,26 @@
 html {
   font-size: 62.5%;
 }
-h1 {
-  background: $color-black;
+body {
+  padding: 0 !important;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #6a6a6a;
+  font-size: 1.8rem;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #6a6a6a;
+  font-size: 1.8rem;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #6a6a6a;
+  font-size: 1.8rem;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #6a6a6a;
+  font-size: 1.8rem;
 }

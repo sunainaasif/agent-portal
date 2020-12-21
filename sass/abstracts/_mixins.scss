@@ -1,6 +1,27 @@
+@import "./variables";
+
 @mixin position-center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@mixin main-heading {
+  color: $color-heading;
+  font-size: 55px;
+  letter-spacing: -1.1px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+@mixin main-button {
+  background: $color-green;
+  color: $color-white;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 5rem;
+  margin-top: 2rem;
 }
