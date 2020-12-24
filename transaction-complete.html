@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="css/icon-font.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     
         <title>PAM Agent Portal</title>
 </head>
@@ -40,15 +40,18 @@
                     </li>
                     <li>
                         <div class="dropdown userProfile open">
-                         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                         <img src="./assets/images/profile.png" alt="" class="userImg"> <span>Welcome</span>David Thomas <i class="fa fa-angle-down"></i></button>
-                         <ul class="dropdown-menu inn-prnt" aria-labelledby="dropdownMenu1">
-                          <li><a href="my-profile.html"><i class="fa fa-user" aria-hidden="true"></i>My Profile</a></li>
-                          <li><a href="e-wallet.html"><i class="fa fa-money" aria-hidden="true"></i>E-Wallet</a></li>
-                          <li><a href="notifications.html"><i class="fa fa-bell" aria-hidden="true"></i>Notification</a></li>
-                          <li><a href="#forgot-pop" data-dismiss="modal" data-toggle="modal"><i class="fa fa-key" aria-hidden="true"></i>Change Password</a></li>
-                          <li><a class="drop-btn" href="#">Sign Out</a></li>
-                         </ul>
+                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            <div class="profile-image"><img src="./assets/images/profile.png" alt="" class="userImg"></div> 
+                            <span>David Thomas <i class="fa fa-angle-down"></i> </span>
+                        </button>
+                        <!-- <ul class="dropdown-menu inn-prnt" aria-labelledby="dropdownMenu1" data-target="#dropdownMenu1"> -->
+                        <ul  class="dropdown-menu" >
+                            <li><a href="my-profile.html"><i class="fa fa-user" aria-hidden="true"></i>My Profile</a></li>
+                            <li><a href="e-wallet.html"><i class="fa fa-money" aria-hidden="true"></i>E-Wallet</a></li>
+                            <li><a href="notifications.html"><i class="fa fa-bell" aria-hidden="true"></i>Notification</a></li>
+                            <li><a href="#forgot-pop" data-dismiss="modal" data-toggle="modal"><i class="fa fa-key" aria-hidden="true"></i>Change Password</a></li>
+                            <li><a class="drop-btn" href="#">Sign Out</a></li>
+                        </ul>
                         </div>
                     </li>
                 </ul>
@@ -69,5 +72,7 @@
       </div>
   </header>
     
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </body>
 </html>

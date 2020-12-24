@@ -11,15 +11,18 @@ header {
       justify-content: space-between;
       align-items: center;
       width: 100%;
+      padding-bottom: 3rem;
       .header-right {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        width: 35%;
+       
+       
         .logo-img {
           height: 90px;
+          
           img {
             height: 100%;
+            padding-right:10rem;
           }
         }
         h6 {
@@ -35,6 +38,7 @@ header {
         flex-direction: row;
         .header-ul {
           display: flex;
+          align-items: center;
           li {
             padding-left: 2rem;
             button {
@@ -42,6 +46,16 @@ header {
               border: none;
               color: #fff;
               text-align: left;
+              display:flex;
+              align-items:center;
+              .profile-image{
+                height: 50px;
+                margin-right: 20px;
+                border-radius: 50%;
+                img{
+                  height:100%;
+                }
+              }
             }
             span {
               display: block;
@@ -55,10 +69,13 @@ header {
     .header-bottom {
       .header-ul-2 {
         display: flex;
+        justify-content: start;
 
         li {
           list-style: none;
           width: 140px;
+          border-right: 2px solid $color-white;
+          margin-right: 60px;
           a {
             font-size: 1.4rem;
             color: $color-white;

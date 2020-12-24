@@ -196,18 +196,18 @@ header .header-div .header-top {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding-bottom: 3rem;
 }
 header .header-div .header-top .header-right {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 35%;
 }
 header .header-div .header-top .header-right .logo-img {
   height: 90px;
 }
 header .header-div .header-top .header-right .logo-img img {
   height: 100%;
+  padding-right: 10rem;
 }
 header .header-div .header-top .header-right h6 {
   color: #a5acc6;
@@ -222,6 +222,7 @@ header .header-div .header-top .header-left {
 }
 header .header-div .header-top .header-left .header-ul {
   display: flex;
+  align-items: center;
 }
 header .header-div .header-top .header-left .header-ul li {
   padding-left: 2rem;
@@ -231,6 +232,16 @@ header .header-div .header-top .header-left .header-ul li button {
   border: none;
   color: #fff;
   text-align: left;
+  display: flex;
+  align-items: center;
+}
+header .header-div .header-top .header-left .header-ul li button .profile-image {
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+header .header-div .header-top .header-left .header-ul li button .profile-image img {
+  height: 100%;
 }
 header .header-div .header-top .header-left .header-ul li span {
   display: block;
@@ -239,10 +250,13 @@ header .header-div .header-top .header-left .header-ul li span {
 }
 header .header-div .header-bottom .header-ul-2 {
   display: flex;
+  justify-content: start;
 }
 header .header-div .header-bottom .header-ul-2 li {
   list-style: none;
   width: 140px;
+  border-right: 2px solid #ffffff;
+  margin-right: 60px;
 }
 header .header-div .header-bottom .header-ul-2 li a {
   font-size: 1.4rem;
