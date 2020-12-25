@@ -1,0 +1,20 @@
+.gray-input {
+  border-radius: 5rem;
+  padding: 1.6rem 2rem;
+
+  height: 4.8rem;
+  border: none;
+
+  outline: none;
+  background-color: #eeeeee;
+
+  font: normal normal normal 1.6rem/3.5rem Circular Std Medium;
+  letter-spacing: 0px;
+  color: #2e3d62;
+
+  &::placeholder {
+    font: normal normal normal 1.6rem/3.5rem Circular Std Medium;
+    letter-spacing: 0px;
+    color: #2e3d62;
+  }
+}

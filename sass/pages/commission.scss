@@ -32,12 +32,17 @@ form.pages-form {
     margin-right: 1rem;
     // margin-right: 2rem;
     flex: 1;
+    outline: none;
   }
   a {
     @include main-button;
     margin-top: 0;
     padding: 10px 20px;
     max-width: 10rem;
+    outline: none;
   }
-  a.red-btn{background:$color-red;margin-left:1rem}
+  a.red-btn {
+    background: $color-red;
+    margin-left: 1rem;
+  }
 }

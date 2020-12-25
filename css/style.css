@@ -7,9 +7,36 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 1800px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 1600px) {
+  html {
+    font-size: 52%;
+  }
+}
+@media (max-width: 1500px) {
+  html {
+    font-size: 48%;
+  }
+}
+@media (max-width: 1400px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 1300px) {
+  html {
+    font-size: 40%;
+  }
+}
 
 body {
   padding: 0 !important;
+  background-color: #f4f8fd !important;
+  height: 100vh;
 }
 
 ::-webkit-input-placeholder {
@@ -119,6 +146,14 @@ body {
 .flex-1 {
   display: flex;
   flex: 1 !important;
+}
+
+.mr-20 {
+  margin-right: 2rem !important;
+}
+
+.mr-10 {
+  margin-right: 1rem !important;
 }
 
 header {
@@ -296,6 +331,49 @@ header .header-div .header-bottom .header-ul-2 li a {
   padding: 1rem 3rem;
 }
 
+.gray-input {
+  border-radius: 5rem;
+  padding: 1.6rem 2rem;
+  height: 4.8rem;
+  border: none;
+  outline: none;
+  background-color: #eeeeee;
+  font: normal normal normal 1.6rem/3.5rem Circular Std Medium;
+  letter-spacing: 0px;
+  color: #2e3d62;
+}
+.gray-input::placeholder {
+  font: normal normal normal 1.6rem/3.5rem Circular Std Medium;
+  letter-spacing: 0px;
+  color: #2e3d62;
+}
+
+.green-button {
+  background: #93c144;
+  box-shadow: 2px 5px 15px #a3a1bc40;
+  border: none;
+  outline: none;
+  padding: 1rem 2.5rem;
+  border-radius: 10rem;
+  font: normal normal normal 1.6rem/2.8rem FontAwesome;
+  letter-spacing: 0px;
+  width: 12rem;
+  color: #ffffff;
+}
+
+.red-button {
+  background: #d53535;
+  box-shadow: 2px 5px 15px #a3a1bc40;
+  border: none;
+  outline: none;
+  padding: 1rem 2.5rem;
+  border-radius: 10rem;
+  font: normal normal normal 1.6rem/2.8rem FontAwesome;
+  letter-spacing: 0px;
+  width: 10rem;
+  color: #ffffff;
+}
+
 .signin {
   display: flex;
   flex-direction: row;
@@ -432,16 +510,25 @@ header .header-div .header-bottom .header-ul-2 li a {
 }
 .transaction-complete-transfer-info .box-row {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .transaction-complete-transfer-info .box-row-inner {
   display: flex;
   flex: 1;
+  flex-wrap: wrap;
+}
+.transaction-complete-transfer-info .box-row-small-text {
+  font: normal normal normal 1.6rem/3.5rem Circular Std Medium;
+  letter-spacing: 0px;
+  color: #2e3d62;
 }
 .transaction-complete-transfer-info .box-row-title {
-  min-width: 20rem;
+  width: 20rem;
   font: normal normal normal 2.4rem/5rem Circular Std Bold;
   letter-spacing: -0.48px;
   color: #2e3d62;
+  margin-right: 2rem;
 }
 .transaction-complete-transfer-info .box-row-desc {
   font: normal normal normal 2.4rem/5rem Circular Std Bold;
@@ -456,6 +543,42 @@ header .header-div .header-bottom .header-ul-2 li a {
 }
 .transaction-complete-transfer-info .box-footer-desc {
   color: #d53535;
+}
+.transaction-complete-transfer-info .wallet-info-table {
+  width: 40%;
+  font: normal normal normal 2.4rem/5rem Circular Std Bold;
+  letter-spacing: -0.48px;
+  color: #2e3d62;
+}
+.transaction-complete-transfer-info .wallet-info-table th {
+  font: normal normal normal 2.4rem/5rem Circular Std Bold;
+  letter-spacing: -0.48px;
+  color: #a3a1bc;
+}
+.transaction-complete-transfer-info .wallet-info-table td:nth-child(2) {
+  text-align: left;
+  font: normal normal normal 24px/50px Circular Std Bold;
+  letter-spacing: -0.48px;
+  color: #3584d5;
+}
+.transaction-complete-transfer-info .wallet-info-table .icons {
+  display: flex;
+}
+.transaction-complete-transfer-info .wallet-info-table .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 10rem;
+  background-color: #93c144;
+}
+.transaction-complete-transfer-info .wallet-info-table .icon-container i {
+  color: #fff;
+  font-size: 2rem;
+}
+.transaction-complete-transfer-info .wallet-info-table .icon-red {
+  background-color: #3584d5;
 }
 
 .transaction-complete-button {
@@ -496,6 +619,7 @@ form.pages-form select {
   border: none;
   margin-right: 1rem;
   flex: 1;
+  outline: none;
 }
 form.pages-form a {
   background: #93c144;
@@ -510,6 +634,7 @@ form.pages-form a {
   margin-top: 0;
   padding: 10px 20px;
   max-width: 10rem;
+  outline: none;
 }
 form.pages-form a.red-btn {
   background: #D53535;

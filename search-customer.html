@@ -13,6 +13,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
 
         <title>PAM Agent Portal</title>
 </head>
@@ -79,62 +80,38 @@
       
 
       <div class="box transaction-complete-transfer-info">
-        
-
         <div class="heading-div">
-            <h2>Transaction Details</h2>
+            <h2>Search Customer</h2>
         </div>
 
-        <div class="box-divider"></div>
+        
 
         <div class="box-row">
            
-            <div class="box-row-inner">
-                <div class="box-row-title">Transaction Time:</div>
-                <div class="box-row-desc">10/12/2020 - 04:00pm</div>
-                
-    
-               </div>
-    
-               <div class="box-row-inner">
-                <div class="box-row-title">Transaction Type:</div>
-                <div class="box-row-desc">Deposit</div>
-                
-    
-               </div>
-           
-          
-            <div class="box-row-inner">
-                <div class="box-row-title">Amount:</div>
-                <div class="box-row-desc">10 USD</div>
-                
-    
-               </div>
-    
-               <div class="box-row-inner">
-                <div class="box-row-title">Status:</div>
-                <div class="box-row-desc">Completed</div>
-                
-    
-               </div>
-          
-        </div>
-       
+          <div class="box-row-small-text mr-20">By Email</div>
 
-     
-        
+          <input class="gray-input mr-20" placeholder="From" />
+
+          <div class="box-row-small-text mr-20">OR</div>
+
+          <input class="gray-input mr-20" placeholder="Mobile No" />
+
+          <button class="green-button mr-10">Search</button>
+          <button class="red-button">Reset</button>
+          
+        </div>   
     </div>
 
 
 
     <div class="box transaction-complete-transfer-info">
-        
+        <div class="heading"></div>
 
         <div class="heading-div">
             <h2>Customer Information</h2>
         </div>
 
-        <div class="box-divider"></div>
+        
 
         <div class="box-row">
            <div class="box-row-inner">
@@ -212,11 +189,56 @@
     </div>
 
 
+    <div class="box transaction-complete-transfer-info">
+        
+
+        <div class="heading-div">
+            <h2>Wallet Information</h2>
+        </div>
+
+    <table class="table table-borderless wallet-info-table">
+        <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Available Balance</th>
+              <th scope="col">Action</th>
+                         
+           </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>USD</td>
+              <td>123.55 USD</td>
+              <td class="">
+               <div class="icons">
+                <span class="icon-container mr-2"><i class="fas fa-eye"></i></span>
+                <span class="icon-container icon-red"><i class="fas fa-eye"></i></span>
+               </div>
+
+                </td>
+              
+            </tr>
+            <tr>
+                <td>USD</td>
+                <td>123.55 USD</td>
+                <td class="">
+                    <div class="icons">
+                        <span class="icon-container mr-2"><i class="fas fa-eye"></i></span>
+                    <span class="icon-container icon-red"><i class="fas fa-eye"></i></span></div>
+
+                    </td>
+                
+              </tr>
+    </table>
+    </div>
+
+
     
 
     
     
-    <div class="transaction-complete-button" ><div class="blue-button">View Transfer Receipt</div></div>
+    
   </div>
     
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

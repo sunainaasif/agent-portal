@@ -6,9 +6,33 @@
 
 html {
   font-size: 62.5%;
+
+  @media (max-width: 1800px) {
+    font-size: 55%;
+  }
+
+  @media (max-width: 1600px) {
+    font-size: 52%;
+  }
+
+  @media (max-width: 1500px) {
+    font-size: 48%;
+  }
+
+  @media (max-width: 1400px) {
+    font-size: 45%;
+  }
+
+  @media (max-width: 1300px) {
+    font-size: 40%;
+  }
 }
 body {
   padding: 0 !important;
+
+  background-color: #f4f8fd !important;
+
+  height: 100vh;
 }
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -35,9 +59,15 @@ body {
   padding: 3rem 10rem;
   background-color: #f4f8fd;
 }
-input::placeholder{color:$color-heading}
-select{color:$color-heading}
-input[type=date] {color:$color-heading;}
+input::placeholder {
+  color: $color-heading;
+}
+select {
+  color: $color-heading;
+}
+input[type="date"] {
+  color: $color-heading;
+}
 ::-webkit-calendar-picker-indicator {
-  opacity:0.6
+  opacity: 0.6;
 }

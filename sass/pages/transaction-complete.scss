@@ -40,19 +40,33 @@
 
   .box-row {
     display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
 
     &-inner {
       display: flex;
 
       flex: 1;
+
+      flex-wrap: wrap;
+    }
+
+    &-small-text {
+      font: normal normal normal 1.6rem/3.5rem Circular Std Medium;
+      letter-spacing: 0px;
+      color: #2e3d62;
     }
 
     &-title {
-      min-width: 20rem;
+      // min-width: 20rem;
+
+      width: 20rem;
 
       font: normal normal normal 2.4rem/5rem Circular Std Bold;
       letter-spacing: -0.48px;
       color: #2e3d62;
+      margin-right: 2rem;
     }
 
     &-desc {
@@ -71,6 +85,49 @@
 
     &-desc {
       color: #d53535;
+    }
+  }
+
+  .wallet-info-table {
+    width: 40%;
+
+    th {
+      font: normal normal normal 2.4rem/5rem Circular Std Bold;
+      letter-spacing: -0.48px;
+      color: #a3a1bc;
+    }
+
+    td:nth-child(2) {
+      text-align: left;
+      font: normal normal normal 24px/50px Circular Std Bold;
+      letter-spacing: -0.48px;
+      color: #3584d5;
+    }
+    font: normal normal normal 2.4rem/5rem Circular Std Bold;
+    letter-spacing: -0.48px;
+    color: #2e3d62;
+
+    .icons {
+      display: flex;
+    }
+
+    .icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 4rem;
+      width: 4rem;
+      border-radius: 10rem;
+      background-color: #93c144;
+
+      i {
+        color: #fff;
+        font-size: 2rem;
+      }
+    }
+
+    .icon-red {
+      background-color: #3584d5;
     }
   }
 }
