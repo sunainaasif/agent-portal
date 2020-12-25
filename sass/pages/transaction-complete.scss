@@ -1,0 +1,81 @@
+.transaction-complete-header {
+  .heading {
+    font: normal normal normal 3.6rem/5rem Circular Std Black;
+    letter-spacing: -0.72px;
+    color: #2e3d62;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .MTCN {
+    color: #3584d5;
+    text-align: center;
+    font: normal normal normal 4.4rem/5rem Circular Std Black;
+    letter-spacing: -0.88px;
+  }
+
+  .time {
+    text-align: center;
+    font: normal normal normal 2.2rem/5rem Circular Std Black;
+    letter-spacing: -0.44px;
+    color: #a5acc6;
+    text-transform: capitalize;
+  }
+}
+
+.transaction-complete-transfer-info {
+  .heading {
+    font: normal normal normal 3rem/7rem Circular Std Black;
+    letter-spacing: -0.6px;
+    color: #2e3d62;
+    text-transform: capitalize;
+  }
+  .box-divider {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
+
+  .box-row {
+    display: flex;
+
+    &-inner {
+      display: flex;
+
+      flex: 1;
+    }
+
+    &-title {
+      min-width: 20rem;
+
+      font: normal normal normal 2.4rem/5rem Circular Std Bold;
+      letter-spacing: -0.48px;
+      color: #2e3d62;
+    }
+
+    &-desc {
+      font: normal normal normal 2.4rem/5rem Circular Std Bold;
+      letter-spacing: -0.48px;
+      color: #a3a1bc;
+    }
+  }
+
+  .box-footer {
+    margin-top: 5rem;
+
+    &-inner {
+      flex: 2;
+    }
+
+    &-desc {
+      color: #d53535;
+    }
+  }
+}
+
+.transaction-complete-button {
+  display: flex;
+  justify-content: flex-end;
+}

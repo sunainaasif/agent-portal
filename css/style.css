@@ -10,7 +10,6 @@ html {
 
 body {
   padding: 0 !important;
-  background-color: #f4f8fd;
 }
 
 ::-webkit-input-placeholder {
@@ -39,15 +38,16 @@ body {
 
 .content-container {
   padding: 3rem 10rem;
+  background-color: #f4f8fd;
 }
 
 body {
-  font-family: "Lato";
-  font-size: 1.6rem;
+  font-family: "Lato" !important;
+  font-size: 1.6rem !important;
   padding: 3rem;
-  box-sizing: border-box;
-  font-weight: 400;
-  line-height: 1.7;
+  box-sizing: border-box !important;
+  font-weight: 400 !important;
+  line-height: 1.7 !important;
   color: #777;
 }
 
@@ -85,6 +85,24 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important;
+}
+
+.text-red {
+  color: #d53535 !important;
+}
+
+.text-blue {
+  color: #3584d5 !important;
+}
+
+.flex-2 {
+  display: flex;
+  flex: 2 !important;
+}
+
+.flex-1 {
+  display: flex;
+  flex: 1 !important;
 }
 
 header {
@@ -174,6 +192,20 @@ header .header-div .header-bottom .header-ul-2 li a {
   border-radius: 1.2rem;
   margin-bottom: 4.6rem;
   padding: 3.6rem;
+}
+
+.blue-button {
+  background-color: #3584d5;
+  color: #fff;
+  box-shadow: 2px 5px 1.5rem #3584d580;
+  border-radius: 10rem;
+  font: normal normal normal 2.4rem/4.3rem Circular Std Book;
+  letter-spacing: 0px;
+  width: 32rem;
+  height: 7rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .signin {
@@ -274,6 +306,73 @@ header .header-div .header-bottom .header-ul-2 li a {
   color: #93c144;
   font-size: 1.8rem;
   text-align: right;
+}
+
+.transaction-complete-header .heading {
+  font: normal normal normal 3.6rem/5rem Circular Std Black;
+  letter-spacing: -0.72px;
+  color: #2e3d62;
+  text-transform: capitalize;
+  text-align: center;
+}
+.transaction-complete-header .MTCN {
+  color: #3584d5;
+  text-align: center;
+  font: normal normal normal 4.4rem/5rem Circular Std Black;
+  letter-spacing: -0.88px;
+}
+.transaction-complete-header .time {
+  text-align: center;
+  font: normal normal normal 2.2rem/5rem Circular Std Black;
+  letter-spacing: -0.44px;
+  color: #a5acc6;
+  text-transform: capitalize;
+}
+
+.transaction-complete-transfer-info .heading {
+  font: normal normal normal 3rem/7rem Circular Std Black;
+  letter-spacing: -0.6px;
+  color: #2e3d62;
+  text-transform: capitalize;
+}
+.transaction-complete-transfer-info .box-divider {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 1px;
+  background-color: #f2f2f2;
+}
+.transaction-complete-transfer-info .box-row {
+  display: flex;
+}
+.transaction-complete-transfer-info .box-row-inner {
+  display: flex;
+  flex: 1;
+}
+.transaction-complete-transfer-info .box-row-title {
+  min-width: 20rem;
+  font: normal normal normal 2.4rem/5rem Circular Std Bold;
+  letter-spacing: -0.48px;
+  color: #2e3d62;
+}
+.transaction-complete-transfer-info .box-row-desc {
+  font: normal normal normal 2.4rem/5rem Circular Std Bold;
+  letter-spacing: -0.48px;
+  color: #a3a1bc;
+}
+.transaction-complete-transfer-info .box-footer {
+  margin-top: 5rem;
+}
+.transaction-complete-transfer-info .box-footer-inner {
+  flex: 2;
+}
+.transaction-complete-transfer-info .box-footer-desc {
+  color: #d53535;
+}
+
+.transaction-complete-button {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */
