@@ -10,6 +10,7 @@ html {
 
 body {
   padding: 0 !important;
+  background-color: #f4f8fd;
 }
 
 ::-webkit-input-placeholder {
@@ -34,6 +35,10 @@ body {
   /* Firefox 18- */
   color: #6a6a6a;
   font-size: 1.8rem;
+}
+
+.content-container {
+  padding: 3rem 10rem;
 }
 
 body {
@@ -80,6 +85,95 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important;
+}
+
+header {
+  padding: 2.5rem 5rem;
+  background: #101820;
+}
+header .header-div {
+  display: flex;
+  flex-direction: column;
+}
+header .header-div .header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+header .header-div .header-top .header-right {
+  display: flex;
+  align-items: center;
+}
+header .header-div .header-top .header-right .logo-img {
+  height: 90px;
+}
+header .header-div .header-top .header-right .logo-img img {
+  height: 100%;
+  padding-right: 10rem;
+}
+header .header-div .header-top .header-right h6 {
+  color: #a5acc6;
+  font-size: 1.4rem;
+}
+header .header-div .header-top .header-right h6 span {
+  color: #3584d5;
+}
+header .header-div .header-top .header-left {
+  display: flex;
+  flex-direction: row;
+}
+header .header-div .header-top .header-left .header-ul {
+  display: flex;
+  align-items: center;
+}
+header .header-div .header-top .header-left .header-ul li {
+  padding-left: 2rem;
+}
+header .header-div .header-top .header-left .header-ul li button {
+  background-color: transparent !important;
+  border: none;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+header .header-div .header-top .header-left .header-ul li button .profile-image {
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+header .header-div .header-top .header-left .header-ul li button .profile-image img {
+  height: 100%;
+}
+header .header-div .header-top .header-left .header-ul li span {
+  display: block;
+  font-size: 14px;
+  color: #a5acc6;
+}
+header .header-div .header-bottom .header-ul-2 {
+  display: flex;
+  justify-content: start;
+}
+header .header-div .header-bottom .header-ul-2 li {
+  list-style: none;
+  width: 140px;
+  border-right: 2px solid #ffffff;
+  margin-right: 60px;
+}
+header .header-div .header-bottom .header-ul-2 li a {
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.box {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 10px 10px 10px #eceefd;
+  border-radius: 1.2rem;
+  margin-bottom: 4.6rem;
+  padding: 3.6rem;
 }
 
 .signin {
@@ -180,87 +274,6 @@ body {
   color: #93c144;
   font-size: 1.8rem;
   text-align: right;
-}
-
-header {
-  padding: 2.5rem 5rem;
-  background: #101820;
-}
-header .header-div {
-  display: flex;
-  flex-direction: column;
-}
-header .header-div .header-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding-bottom: 3rem;
-}
-header .header-div .header-top .header-right {
-  display: flex;
-  align-items: center;
-}
-header .header-div .header-top .header-right .logo-img {
-  height: 90px;
-}
-header .header-div .header-top .header-right .logo-img img {
-  height: 100%;
-  padding-right: 10rem;
-}
-header .header-div .header-top .header-right h6 {
-  color: #a5acc6;
-  font-size: 1.4rem;
-}
-header .header-div .header-top .header-right h6 span {
-  color: #3584d5;
-}
-header .header-div .header-top .header-left {
-  display: flex;
-  flex-direction: row;
-}
-header .header-div .header-top .header-left .header-ul {
-  display: flex;
-  align-items: center;
-}
-header .header-div .header-top .header-left .header-ul li {
-  padding-left: 2rem;
-}
-header .header-div .header-top .header-left .header-ul li button {
-  background-color: transparent !important;
-  border: none;
-  color: #fff;
-  text-align: left;
-  display: flex;
-  align-items: center;
-}
-header .header-div .header-top .header-left .header-ul li button .profile-image {
-  height: 50px;
-  margin-right: 20px;
-  border-radius: 50%;
-}
-header .header-div .header-top .header-left .header-ul li button .profile-image img {
-  height: 100%;
-}
-header .header-div .header-top .header-left .header-ul li span {
-  display: block;
-  font-size: 14px;
-  color: #a5acc6;
-}
-header .header-div .header-bottom .header-ul-2 {
-  display: flex;
-  justify-content: start;
-}
-header .header-div .header-bottom .header-ul-2 li {
-  list-style: none;
-  width: 140px;
-  border-right: 2px solid #ffffff;
-  margin-right: 60px;
-}
-header .header-div .header-bottom .header-ul-2 li a {
-  font-size: 1.4rem;
-  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

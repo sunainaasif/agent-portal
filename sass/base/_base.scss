@@ -9,6 +9,7 @@ html {
 }
 body {
   padding: 0 !important;
+  background-color: #f4f8fd;
 }
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -29,4 +30,8 @@ body {
   /* Firefox 18- */
   color: #6a6a6a;
   font-size: 1.8rem;
+}
+
+.content-container {
+  padding: 3rem 10rem;
 }
