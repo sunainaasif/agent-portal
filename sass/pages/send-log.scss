@@ -1,0 +1,8 @@
+
+  .box{
+      div{
+          h2{
+              @include box-heading;
+          }
+      }
+  }

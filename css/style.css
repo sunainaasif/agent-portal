@@ -41,6 +41,22 @@ body {
   background-color: #f4f8fd;
 }
 
+input::placeholder {
+  color: #2e3d62;
+}
+
+select {
+  color: #2e3d62;
+}
+
+input[type=date] {
+  color: #2e3d62;
+}
+
+::-webkit-calendar-picker-indicator {
+  opacity: 0.6;
+}
+
 body {
   font-family: "Lato" !important;
   font-size: 1.6rem !important;
@@ -206,6 +222,78 @@ header .header-div .header-bottom .header-ul-2 li a {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.styled-table {
+  margin-top: 5rem;
+  margin-bottom: 4rem !important;
+}
+.styled-table thead tr {
+  background: #F6F6F6;
+  padding: 2rem;
+}
+.styled-table thead tr th {
+  padding: 3rem 2rem;
+  font-size: 2rem;
+  color: #1C2D41;
+  font-weight: 600;
+}
+.styled-table tbody tr td {
+  padding: 3rem 2rem;
+  color: #a3a1bc;
+  font-size: 2.2rem;
+}
+.styled-table tbody tr td i {
+  background: #93c144;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+.styled-table tbody tr td.green-td {
+  color: #93c144;
+}
+.styled-table tbody tr td.blue-td {
+  color: #3584d5;
+}
+.styled-table tbody tr td.red-td {
+  color: #D53535;
+}
+
+.pagi {
+  color: #a3a1bc;
+}
+
+.heading-div {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #ECEEFD;
+  margin-bottom: 3rem;
+}
+.heading-div h2 {
+  text-align: left;
+  letter-spacing: -0.6px;
+  color: #2e3d62;
+  text-transform: capitalize;
+  opacity: 1;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.heading-div a {
+  background: #93c144;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 5rem;
+  margin-top: 2rem;
+  margin: 0;
+  width: auto;
+  background: #9190A2;
+  padding: 1rem 3rem;
 }
 
 .signin {
@@ -378,7 +466,7 @@ header .header-div .header-bottom .header-ul-2 li a {
 .amounts {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 .amounts .amount-box {
   border: 2px dashed #2a1e59;
@@ -389,17 +477,18 @@ header .header-div .header-bottom .header-ul-2 li a {
 .amounts .amount-box h3 {
   color: #2a1e59;
   font-size: 4.8rem;
+  font-weight: 600;
 }
 .amounts .amount-box p {
   color: #a3a1bc;
   font-size: 2rem;
 }
 
-form {
+form.pages-form {
   display: flex;
 }
-form input,
-form select {
+form.pages-form input,
+form.pages-form select {
   background: #eeeeee;
   border-radius: 5rem;
   font-size: 1.6rem;
@@ -408,7 +497,7 @@ form select {
   margin-right: 1rem;
   flex: 1;
 }
-form a {
+form.pages-form a {
   background: #93c144;
   color: #ffffff;
   text-align: center;
@@ -421,6 +510,20 @@ form a {
   margin-top: 0;
   padding: 10px 20px;
   max-width: 10rem;
+}
+form.pages-form a.red-btn {
+  background: #D53535;
+  margin-left: 1rem;
+}
+
+.box div h2 {
+  text-align: left;
+  letter-spacing: -0.6px;
+  color: #2e3d62;
+  text-transform: capitalize;
+  opacity: 1;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,36 @@
+.styled-table {
+    margin-top:5rem;
+    margin-bottom:4rem !important;
+    thead{
+        tr{
+            background:#F6F6F6;
+            padding:2rem;
+            th{
+                padding: 3rem 2rem;
+                font-size:2rem;
+                color:#1C2D41;
+                font-weight:600;
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                padding: 3rem 2rem;
+                color:$color-label;
+                font-size:2.2rem;
+                i{
+                    background: #93c144;
+                    color: #ffffff;
+                    border-radius: 50px;
+                    padding: 1rem;
+                    font-size: 1.6rem;
+                }
+            }
+            td.green-td{color:$color-green}
+            td.blue-td{color:$color-blue}
+            td.red-td{color:$color-red}
+        }
+    }
+}
+.pagi{color:$color-label;}

@@ -25,3 +25,13 @@
   border-radius: 5rem;
   margin-top: 2rem;
 }
+@mixin box-heading{
+  text-align: left;
+  letter-spacing: -0.6px;
+  color: #2e3d62;
+  text-transform: capitalize;
+  opacity: 1;
+  font-size: 3rem;
+ 
+  font-weight: 600;
+}

@@ -35,3 +35,9 @@ body {
   padding: 3rem 10rem;
   background-color: #f4f8fd;
 }
+input::placeholder{color:$color-heading}
+select{color:$color-heading}
+input[type=date] {color:$color-heading;}
+::-webkit-calendar-picker-indicator {
+  opacity:0.6
+}
