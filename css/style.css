@@ -259,6 +259,14 @@ header .header-div .header-bottom .header-ul-2 li a {
 .styled-table tbody tr td.red-td {
   color: #D53535;
 }
+.styled-table tbody tr td.remove-td {
+  color: #D53535;
+}
+.styled-table tbody tr td.remove-td i {
+  background: #D53535;
+  padding: 0.5rem 0.8rem;
+  margin-right: 1rem;
+}
 
 .pagi {
   color: #a3a1bc;
@@ -294,6 +302,9 @@ header .header-div .header-bottom .header-ul-2 li a {
   width: auto;
   background: #9190A2;
   padding: 1rem 3rem;
+}
+.heading-div a.red-btn {
+  background: #D53535;
 }
 
 .signin {
@@ -516,14 +527,50 @@ form.pages-form a.red-btn {
   margin-left: 1rem;
 }
 
-.box div h2 {
-  text-align: left;
-  letter-spacing: -0.6px;
+.notes-and-amount {
+  display: flex;
+  justify-content: space-between;
+}
+.notes-and-amount .notes h4 {
   color: #2e3d62;
+  font-size: 55px;
+  letter-spacing: -1.1px;
   text-transform: capitalize;
-  opacity: 1;
+  font-weight: bold;
+  margin-bottom: 3rem;
   font-size: 3rem;
-  font-weight: 600;
+}
+.notes-and-amount .notes ul li {
+  list-style: decimal;
+  margin-left: 10px;
+  color: #D53535;
+  font-size: 1.8rem;
+}
+.notes-and-amount .amount h6 {
+  color: #2e3d62;
+  font-size: 55px;
+  letter-spacing: -1.1px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  font-size: 2.4rem;
+  text-align: right;
+}
+.notes-and-amount .amount h6 span {
+  color: #D53535;
+}
+.notes-and-amount .amount h4 {
+  color: #2e3d62;
+  font-size: 55px;
+  letter-spacing: -1.1px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  text-align: right;
+}
+.notes-and-amount .amount h4 span {
+  color: #D53535;
 }
 
 /*# sourceMappingURL=style.css.map */

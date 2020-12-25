@@ -30,6 +30,10 @@
             td.green-td{color:$color-green}
             td.blue-td{color:$color-blue}
             td.red-td{color:$color-red}
+            td.remove-td{
+                color:$color-red;
+                i{background: $color-red;padding: 0.5rem 0.8rem;;margin-right:1rem}
+            }
         }
     }
 }
