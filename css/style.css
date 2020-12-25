@@ -276,4 +276,52 @@ header .header-div .header-bottom .header-ul-2 li a {
   text-align: right;
 }
 
+.amounts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.amounts .amount-box {
+  border: 2px dashed #2a1e59;
+  background-color: #f6f6f6;
+  padding: 5rem 10rem;
+  text-align: center;
+}
+.amounts .amount-box h3 {
+  color: #2a1e59;
+  font-size: 4.8rem;
+}
+.amounts .amount-box p {
+  color: #a3a1bc;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+}
+form input,
+form select {
+  background: #eeeeee;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  padding: 1rem;
+  border: none;
+  margin-right: 1rem;
+  flex: 1;
+}
+form a {
+  background: #93c144;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 5rem;
+  margin-top: 2rem;
+  margin-top: 0;
+  padding: 10px 20px;
+  max-width: 10rem;
+}
+
 /*# sourceMappingURL=style.css.map */

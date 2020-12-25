@@ -1,0 +1,41 @@
+.amounts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+
+  .amount-box {
+    border: 2px dashed $color-para;
+    background-color: #f6f6f6;
+    padding: 5rem 10rem;
+    text-align: center;
+    h3 {
+      color: $color-para;
+      font-size: 4.8rem;
+    }
+    p {
+      color: $color-label;
+      font-size: 2rem;
+    }
+  }
+}
+form {
+  display: flex;
+  input,
+  select {
+    background: $input-bg-color;
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border: none;
+    // width: 13rem;
+    margin-right: 1rem;
+    // margin-right: 2rem;
+    flex: 1;
+  }
+  a {
+    @include main-button;
+    margin-top: 0;
+    padding: 10px 20px;
+    max-width: 10rem;
+  }
+}
