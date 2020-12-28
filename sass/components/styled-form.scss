@@ -1,0 +1,20 @@
+form{
+    .row {
+        margin-bottom: 4rem;
+    }
+}
+           
+           
+           label{
+                    color:$color-label;
+                    margin-bottom:2rem;
+                }
+                select.custom-select, input.custom-input{
+                    background-color: #F6F6F6;
+                    font-size: 1.8rem;
+                    color: #2e3d62;
+                    padding: 1rem 2rem;
+                    height: 5rem;
+                    font-weight: 600;
+                    border:none;
+                }

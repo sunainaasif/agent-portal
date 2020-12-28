@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="css/icon-font.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <title>PAM Agent Portal</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-div">
+            <div class="header-top">
+              <div class="header-right">
+                  <div class="logo-img">
+                     <a href="#"> <img src="./assets/images/Logo.png" alt=""> </a>
+                  </div>
+                  <div class="welcome">
+                      <h6>Welcome<br> Operator : <span>6598563</span></h6>
+                  </div>
+              </div>
+              <div class="header-left">
+                  <ul class="header-ul">
+                      <li>
+                          <span class="last-log">Last Logout: 11-05-2020, 9:30 p.m.</span>
+                          <span class="last-log">Last Login: 11-05-2020, 12:30 p.m.</span>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="./assets/images/notification.svg" alt="">
+                          </a>
+                      </li>
+                      <li>
+                          <div class="dropdown userProfile open">
+                           <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                              <div class="profile-image"><img src="./assets/images/profile.png" alt="" class="userImg"></div> 
+                              <span>David Thomas <i class="fa fa-angle-down"></i> </span>
+                          </button>
+                          <!-- <ul class="dropdown-menu inn-prnt" aria-labelledby="dropdownMenu1" data-target="#dropdownMenu1"> -->
+                          <ul  class="dropdown-menu" >
+                              <li><a href="my-profile.html"><i class="fa fa-user" aria-hidden="true"></i>My Profile</a></li>
+                              <li><a href="e-wallet.html"><i class="fa fa-money" aria-hidden="true"></i>E-Wallet</a></li>
+                              <li><a href="notifications.html"><i class="fa fa-bell" aria-hidden="true"></i>Notification</a></li>
+                              <li><a href="#forgot-pop" data-dismiss="modal" data-toggle="modal"><i class="fa fa-key" aria-hidden="true"></i>Change Password</a></li>
+                              <li><a class="drop-btn" href="#">Sign Out</a></li>
+                          </ul>
+                          </div>
+                      </li>
+                      
+                  </ul>
+              </div>
+            </div>
+            <div class="header-bottom">
+                <ul class="header-ul-2">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="send-money.html">Send Money</a></li>
+                    <li><a href="send-product.html">Send Product</a></li>
+                    <li><a href="send-log.html">Send Log</a></li>
+                    <li><a href="received-log.html">Received Log</a></li>
+                    <li><a href="wallet-log.html">Wallet Log</a></li>
+                    <li><a href="commission.html">Commission Log</a></li>
+                </ul>
+  
+            </div>
+        </div>
+    </header>
+  <div class="content-container">
+    <div class="box">
+        <div class="heading-div">
+            <div>
+                <h2>Sender Lookup</h2>
+                <p>Required fields are marked with *</p>
+             
+            </div>
+           
+        </div>
+        <div>
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label for="inputEmail4">Receiver Country <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="inputPassword4">Receiver State <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="inputEmail4">Receiver City<span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="inputPassword4">Category<span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>Category</option>
+                        <option>...</option>
+                      </select>
+                  </div>
+                </div>
+                
+              </form>
+        </div>
+    </div>
+    <div class="box">
+        <div class="heading-div">
+            <h2>Sender Information</h2>
+        </div>
+        <div>
+
+        <form action="">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Country Code <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Mobile Number <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Email <span class="steric">*</span></label>
+                    <input class="form-control custom-input" type="email" placeholder="Enter Email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Last Name <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Mobile Number <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Date Of Birth <span class="steric">*</span></label>
+                    <input class="form-control custom-input" type="date" placeholder="Enter Dob">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Country <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> State <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> City <span class="steric">*</span></label>
+                    <input class="form-control custom-input" type="email" placeholder="Enter Email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Address <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Zip Code <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    
+                    
+             
+
+                </div>
+            </div>
+        </form>
+            
+        </div>
+
+      
+         
+    </div>
+    <div class="box">
+        <div class="heading-div">
+            <h2>Transfer Information    </h2>
+        </div>
+        <div class="heading-div no-border">
+            <h2>Delivery Services   </h2>
+        </div>
+        <div>
+            <form action="">
+            <div class="row">
+                <div class="col-md-8">
+                    <label for=""> Payout agent and service</label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+             
+                <div class="col-md-4">
+                   
+                </div>
+            </div>
+           
+              <div class="row">
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Country Code <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Mobile Number <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+               
+                    <label for="inputPassword4"></label>
+                  <p class="rates">Estimated Exchange rate: <span>100USD = 1 USD = 0.842426 GEU</span></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <label for="inputEmail4"> Mobile Number <span class="steric">*</span></label>
+                            <select id="" class="form-control custom-select">
+                                <option selected>United States</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputEmail4"> Mobile Number <span class="steric">*</span></label>
+                            <select id="" class="form-control custom-select">
+                                <option selected>United States</option>
+                                <option style="background-image: url('./assets/images/profile.png');"></option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Amount Recieved <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputPassword4"></label>
+                  
+                </div>
+            </div>
+        </form>
+        </div>
+
+      
+       
+    </div>
+
+    <div class="box">
+        <div class="heading-div">
+            <h2>Receiver Lookup</h2>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Country Code <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Mobile Number <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                   
+                </div>
+            </div>
+      
+        </div>
+
+      
+       
+    </div>
+    <div class="box">
+        <div class="heading-div">
+            <h2>Receiver Information</h2>
+        </div>
+        <div>
+
+        <form action="">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Country Code <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Mobile Number <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Email <span class="steric">*</span></label>
+                    <input class="form-control custom-input" type="email" placeholder="Enter Email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Last Name <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Mobile Number <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Date Of Birth <span class="steric">*</span></label>
+                    <input class="form-control custom-input" type="date" placeholder="Enter Dob">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Country <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> State <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> City <span class="steric">*</span></label>
+                    <input class="form-control custom-input" type="email" placeholder="Enter Email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Address <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEmail4"> Zip Code <span class="steric">*</span></label>
+                    <select id="" class="form-control custom-select">
+                        <option selected>United States</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-md-4">
+                    
+                    
+             
+
+                </div>
+            </div>
+        </form>
+            
+        </div>
+        <div class="notes-and-amount">
+            <div class="notes">
+                <h4>Important Notes</h4>
+                <ul>
+                    <li>Lorem ipsum dolor sit . Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Lorem ipsum dolor sit . Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Lorem ipsum dolor sit . Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>                      
+                </ul>
+            </div>
+            <div class="amount">
+                <h6>Item Price: <span>$150</span></h6>
+                <h6>Item Price: <span>$150</span></h6>
+                <h4>Total Amount: <span>$150</span></h4>
+            </div>
+        </div>
+
+        <div class="end-note">
+            <p>Do Not Collect Cash at this Point</p>
+            <a href="#">Next</a>
+
+        </div>
+
+      
+         
+    </div>
+    
+  </div>
+      
+    
+ 
+</body>
+</html>

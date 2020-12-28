@@ -7,6 +7,10 @@
     h2{
         @include box-heading;      
     }
+    p{
+        color:$color-label;
+        margin:0;
+    }
     a{
         @include main-button;
         margin:0;
@@ -16,4 +20,9 @@
         
     }
     a.red-btn{background: $color-red;}
+}
+.heading-div.no-border{
+    padding-bottom: 0;
+    border-bottom:none;
+    margin-bottom: 2rem;
 }
