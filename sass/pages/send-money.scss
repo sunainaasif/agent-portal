@@ -1,0 +1,74 @@
+.box-card{
+    padding: 3.6rem;
+    border: 2px dashed $color-label;
+    text-align:center;
+    h5{
+        color:$color-label;
+        font-size:2.4rem;
+        font-weight: 600;
+    }
+    h4{
+        color:$color-heading;
+        font-size:3rem;
+        font-weight:600;
+        
+    }
+
+    .details{
+        text-align:left;
+        padding-top:2rem;
+        p{
+            
+            color:$color-label;
+            font-size:1.8rem;
+        }
+        h6{
+            margin-top:3rem;
+            color:$color-heading;
+            font-size:1.8rem;
+            font-weight: 600;
+            span{
+            color:$color-label;
+            font-weight: normal;
+
+            }
+        }
+        .details1 {
+            margin-bottom:4rem;
+            p{margin-bottom: -2px;}
+            
+        }
+    }
+    .bill{
+        border-top:1px solid $color-label;  
+        border-bottom:2px dashed $color-label;
+        margin: 2.2rem 0;
+        padding: 2.2rem 0;
+        .bill-content {
+            display: flex;
+            justify-content: space-between;
+            p{
+                font-size: 1.8rem;
+                color:$color-label;;
+            }
+            p.bill-amount{color:$color-heading;font-weight:600;}
+        }
+    }
+    .total{
+        h4{ line-height:4rem;
+            // span.amount-color{color:$color-blue}
+        }
+    }
+}
+a.green-btn{
+    padding:1rem 3rem;
+    background: $color-green;
+    color:$color-white;
+    border-radius: 5rem;
+    box-shadow: 2px 5px 15px #93C14494;
+    font-size:2.4rem;
+    margin-bottom: 4rem;
+    display: block;
+    text-decoration: none;
+}
+span.amount-color{ color:$color-blue}

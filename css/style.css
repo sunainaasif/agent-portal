@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -86,6 +87,41 @@ input[type=date] {
 
 .steric {
   color: #D53535;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label::before {
+  content: "✔";
+  border: 0.1em solid #000;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 10px;
+  vertical-align: bottom;
+  color: transparent;
+  transition: 0.2s;
+  margin-bottom: 9px;
+}
+
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label::before {
+  background-color: #93C144;
+  border-color: #93C144;
+  color: #fff;
+  line-height: 17px;
+  font-size: 1.5rem;
+}
+
+input[type=checkbox]:checked + label {
+  color: #93c144;
 }
 
 body {
@@ -226,6 +262,36 @@ header .header-div .header-top .header-left .header-ul li span {
   font-size: 14px;
   color: #a5acc6;
 }
+header .header-div .header-top .header-left .header-ul li .userProfile ul {
+  background: #93c144;
+  padding: 2rem 1rem 0rem;
+  width: 22rem;
+  border-radius: 1.2rem;
+}
+header .header-div .header-top .header-left .header-ul li .userProfile ul li {
+  margin-bottom: 2rem;
+}
+header .header-div .header-top .header-left .header-ul li .userProfile ul li a {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+header .header-div .header-top .header-left .header-ul li .userProfile ul li a i {
+  margin-right: 2rem;
+}
+header .header-div .header-top .header-left .header-ul li .userProfile ul li a.signout-btn {
+  background: #FF2A54;
+  border-radius: 5rem;
+  padding: 1rem 3rem;
+  text-decoration: none;
+}
+header .header-div .header-top .header-left .header-ul li .dropdown-toggle::after {
+  margin-left: 1rem;
+  margin-top: 0.4em;
+  border-top: 1.4em solid;
+  border-right: 0.9em solid transparent;
+  border-left: 0.9em solid transparent;
+  color: #93c144;
+}
 header .header-div .header-bottom .header-ul-2 {
   display: flex;
   justify-content: start;
@@ -247,6 +313,10 @@ header .header-div .header-bottom .header-ul-2 li a {
   border-radius: 1.2rem;
   margin-bottom: 4.6rem;
   padding: 3.6rem;
+}
+
+.box.card-padding {
+  padding: 2rem;
 }
 
 .blue-button {
@@ -786,6 +856,83 @@ form.pages-form a.red-btn {
 }
 .rates span {
   color: #D53535;
+}
+
+.box-card {
+  padding: 3.6rem;
+  border: 2px dashed #a3a1bc;
+  text-align: center;
+}
+.box-card h5 {
+  color: #a3a1bc;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.box-card h4 {
+  color: #2e3d62;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.box-card .details {
+  text-align: left;
+  padding-top: 2rem;
+}
+.box-card .details p {
+  color: #a3a1bc;
+  font-size: 1.8rem;
+}
+.box-card .details h6 {
+  margin-top: 3rem;
+  color: #2e3d62;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.box-card .details h6 span {
+  color: #a3a1bc;
+  font-weight: normal;
+}
+.box-card .details .details1 {
+  margin-bottom: 4rem;
+}
+.box-card .details .details1 p {
+  margin-bottom: -2px;
+}
+.box-card .bill {
+  border-top: 1px solid #a3a1bc;
+  border-bottom: 2px dashed #a3a1bc;
+  margin: 2.2rem 0;
+  padding: 2.2rem 0;
+}
+.box-card .bill .bill-content {
+  display: flex;
+  justify-content: space-between;
+}
+.box-card .bill .bill-content p {
+  font-size: 1.8rem;
+  color: #a3a1bc;
+}
+.box-card .bill .bill-content p.bill-amount {
+  color: #2e3d62;
+  font-weight: 600;
+}
+.box-card .total h4 {
+  line-height: 4rem;
+}
+
+a.green-btn {
+  padding: 1rem 3rem;
+  background: #93c144;
+  color: #ffffff;
+  border-radius: 5rem;
+  box-shadow: 2px 5px 15px #93C14494;
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+  display: block;
+  text-decoration: none;
+}
+
+span.amount-color {
+  color: #3584d5;
 }
 
 /*# sourceMappingURL=style.css.map */

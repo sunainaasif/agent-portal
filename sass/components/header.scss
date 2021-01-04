@@ -61,6 +61,36 @@ header {
               font-size: 14px;
               color: #a5acc6;
             }
+            .userProfile{
+              ul{
+                background:$color-green;  
+                padding:2rem 1rem 0rem;
+                width:22rem;
+                border-radius:1.2rem;
+                li{
+                  margin-bottom:2rem;
+                  a{color:$color-white;
+                    font-size:1.6rem;
+                    i{margin-right:2rem;}
+
+                  }
+                  a.signout-btn{
+                    background:$color-pink;
+                    border-radius:5rem;
+                    padding:1rem 3rem;
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+            .dropdown-toggle::after {
+              margin-left:1rem;
+              margin-top: 0.4em;
+              border-top: 1.4em solid;
+              border-right: 0.9em solid transparent;
+              border-left: 0.9em solid transparent;
+              color: #93c144;
+          }
           }
         }
       }
