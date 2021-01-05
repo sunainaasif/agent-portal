@@ -935,4 +935,50 @@ span.amount-color {
   color: #3584d5;
 }
 
+.limit-row {
+  display: flex;
+}
+.limit-row h4 {
+  flex: 0.4;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #2e3d62;
+  margin-bottom: 2rem;
+}
+.limit-row h5 {
+  font-size: 2.2rem;
+  color: #2e3d62;
+  flex: 0.4;
+  margin-bottom: 2rem;
+}
+.limit-row h5.color-red {
+  color: #D53535;
+}
+
+.progress.stacked-progress-bar {
+  height: 2.2rem;
+  border-radius: 20px;
+  background: #3584d6;
+}
+.progress.stacked-progress-bar .progress-bar {
+  font-size: 1.4rem;
+}
+.progress.stacked-progress-bar .bg-red {
+  background-color: #ff1e1e;
+}
+.progress.stacked-progress-bar .bg-yellow {
+  background-color: #e7d002;
+}
+.progress.stacked-progress-bar .bg-green {
+  background-color: #93c144;
+}
+
+.donut {
+  margin-top: 4rem;
+}
+.donut h5 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=style.css.map */

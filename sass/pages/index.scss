@@ -1,0 +1,49 @@
+.limit-row{
+    display:flex;
+    h4 {
+        flex: 0.4;
+        font-size: 2.4rem;
+        font-weight: 600;
+        color:$color-heading;
+        margin-bottom: 2rem;
+    }
+    h5 {
+        font-size: 2.2rem;
+        // font-weight: 600;
+        color:$color-heading;
+        flex: 0.4;
+        margin-bottom: 2rem;
+    }
+    h5.color-red{color:$color-red;}
+}
+
+.progress.stacked-progress-bar {
+    height: 2.2rem;
+    border-radius: 20px;
+    background: #3584d6;
+    
+    .progress-bar {
+        font-size: 1.4rem;
+    }
+    .bg-red{ background-color: #ff1e1e;}
+    .bg-yellow{ background-color: #e7d002;}
+    .bg-green{ background-color: #93c144;}
+}
+.donut{
+    margin-top: 4rem;
+    h5 {
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+}
+// .stretched-4-8{ 
+//     display:flex;
+//     .box:first-child{flex:0.34;}
+//     .box:last-child{ flex: 0.7;}
+//     .box:not(:last-child) {margin-right: 2rem;}
+// }
+// .stretched-4-4{ 
+//     display:flex;
+//     .box{flex:0.34}
+//     .box:not(:last-child) {margin-right: 2rem;}
+// }

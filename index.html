@@ -13,6 +13,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
 
         <title>PAM Agent Portal</title>
 </head>
@@ -67,55 +68,173 @@
         </div>
     </header>
   <div class="content-container">
-    <div class="box">
-        <div class="amounts">
-            <div class="amount-box">
-                <h3>300 USD</h3>
-                <p>Amount Earned</p>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="box">
+                  <div class="limit">
+                      <div class="limit-row">
+                          <h4>Daily Limit:</h4>
+                          <h4>USD 5,503.00</h4>
+                      </div>
+                      <div class="limit-row">
+                        <h5>Current Limit:</h5>
+                        <h5 class="color-red">USD 5,503.00</h5>
+                    </div>
+                    <div class="limit-row">
+                        <h5>Current Balance:</h5>
+                        <h5 class="color-red">USD 5,503.00</h5>
+                    </div>
+                  </div>
+                <div class="progress stacked-progress-bar">
+                    <div class="progress-bar bg-red" style="width: 25%">
+                        25%
+                    </div>
+                    <div class="progress-bar bg-yellow" style="width: 40%">
+                        40%
+                    </div>
+                    <div class="progress-bar bg-green" style="width: 10%">
+                        10%
+                    </div>
+                </div>
+                
+                <div class="donut">
+                    <h5>Cash Drop Off Orders</h5>
+                    <canvas id="myChart" width="" height=""></canvas>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-8">
+              <div class="box"></div>
+          </div>
+      </div>
+
+
+      <!-- Trial -->
+      <!-- <div class="stretched-4-8">
+        <div class="box">
+            <div class="limit">
+                <div class="limit-row">
+                    <h4>Daily Limit:</h4>
+                    <h4>USD 5,503.00</h4>
+                </div>
+                <div class="limit-row">
+                  <h5>Current Limit:</h5>
+                  <h5 class="color-red">USD 5,503.00</h5>
+              </div>
+              <div class="limit-row">
+                  <h5>Current Balance:</h5>
+                  <h5 class="color-red">USD 5,503.00</h5>
+              </div>
             </div>
-            <div class="amount-box">
-                <h3>300 USD</h3>
-                <p>Amount Received</p>
-            </div>
-            <div class="amount-box">
-                <h3>300 USD</h3>
-                <p>Amount Pending</p>
-            </div>
+          <div class="progress stacked-progress-bar">
+              <div class="progress-bar bg-red" style="width: 25%">
+                  25%
+              </div>
+              <div class="progress-bar bg-yellow" style="width: 40%">
+                  40%
+              </div>
+              <div class="progress-bar bg-green" style="width: 10%">
+                  10%
+              </div>
+          </div>
+          
+          <div class="donut">
+              <h5>Cash Drop Off Orders</h5>
+              <canvas id="myChart" width="" height=""></canvas>
+          </div>
         </div>
-        <form>
-            <input type="date" placeholder="From">
-            <input type="date" placeholder="To">
-            <select name="type" id="type">
-                <option value="">Type</option>
-                <option value="">2</option>
-                <option value="">3</option>
-            </select>
-            <input type="text" placeholder="MTCN">
-            <select name="" id="">
-                <option value="">Category</option>
-                <option value="">2</option>
-                <option value="">3</option>
-            </select>
-            <select name="" id="">
-                <option value="">TRA Status</option>
-                <option value="">2</option>
-                <option value="">3</option>
-            </select>
-            <select name="" id="">
-                <option value="">COMM Status</option>
-                <option value="">2</option>
-                <option value="">3</option>
-            </select>
-            <a href="#">Search</a>
-            <a href="#" class="red-btn" >Reset</a>
+          <div class="box">
+            <canvas id="myChart" width="" height=""></canvas>
+          </div>
+      </div>
 
-
-        </form>
-    </div>
+      <div class=" stretched-4-4">
+        <div class="box">
+            <div class="limit">
+                <div class="limit-row">
+                    <h4>Daily Limit:</h4>
+                    <h4>USD 5,503.00</h4>
+                </div>
+                <div class="limit-row">
+                  <h5>Current Limit:</h5>
+                  <h5 class="color-red">USD 5,503.00</h5>
+              </div>
+              <div class="limit-row">
+                  <h5>Current Balance:</h5>
+                  <h5 class="color-red">USD 5,503.00</h5>
+              </div>
+            </div>
+          <div class="progress stacked-progress-bar">
+              <div class="progress-bar bg-red" style="width: 25%">
+                  25%
+              </div>
+              <div class="progress-bar bg-yellow" style="width: 40%">
+                  40%
+              </div>
+              <div class="progress-bar bg-green" style="width: 10%">
+                  10%
+              </div>
+          </div>
+          
+          <div class="donut">
+              <h5>Cash Drop Off Orders</h5>
+              <canvas id="myChart" width="" height=""></canvas>
+          </div>
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div> -->
+      <!-- Trial ends -->
+    
   </div>
       
     
   <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
 </body>
+<script>
+    var data = {
+    labels: [
+        "Complete Orders",
+        "Back deposit Orders",
+        "Home Delivery order"
+    ],
+    datasets: [
+        {
+            data: [300, 50, 100],
+            backgroundColor: [
+                "#FF6384",
+                "#ff9f40",
+                "#ffcd57"
+            ],
+            hoverBackgroundColor: [
+                "#fc486e",
+                "#ff8f20",
+                "#ffbd21"
+            ]
+        }]
+};
+
+var ctx = document.getElementById("myChart");
+
+// And for a doughnut chart
+var myDoughnutChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: data,
+    options: {
+    	rotation: 1 * Math.PI,
+      circumference: 1 * Math.PI,
+      legend:{
+          position:'right',
+          labels: {
+          usePointStyle: true,
+          color:'#9290B1'
+        }
+      }
+    },
+   
+});
+
+
+</script>
 </html>
