@@ -14,7 +14,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
         <title>PAM Agent Portal</title>
 </head>
 
@@ -70,7 +70,7 @@
   <div class="content-container">
       <div class="row">
           <div class="col-md-4">
-              <div class="box">
+              <div class="box height-500">
                   <div class="limit">
                       <div class="limit-row">
                           <h4>Daily Limit:</h4>
@@ -104,7 +104,21 @@
               </div>
           </div>
           <div class="col-md-8">
-              <div class="box"></div>
+              <div class="box height-500">
+                  <div class="chart-heading">
+                      <h4>Transaction History</h4>
+                      <select name="" id="">
+                          <option value="">2018</option>
+                          <option value="">2019</option>
+                          <option value="">2020</option>
+                          <option value="">2021</option>
+                      </select>
+                  </div>
+                <div class="chart-container">
+                    <canvas id="chart"></canvas>
+                </div>
+                
+              </div>
           </div>
       </div>
 
@@ -186,6 +200,148 @@
       </div> -->
       <!-- Trial ends -->
     
+      <div class="row">
+          <div class="col-md-4">
+              <div class="box height-500">
+                  <div class="user-info">
+                      <div class="user-img">
+                          <img src="./assets/images/profile.png" alt="">
+                      </div>
+                      <h5>Justas Galaburda</h5>
+                      <p>Justas@gmail.com</p>
+                  </div>
+                  <div class="trans-info">
+                      <div class="total-trans">
+                          <h6>Total Transactions</h6>
+                          <p> 54</p>
+                      </div>
+                      <div class="total-trans">
+                        <h6>Commission Earned </h6>
+                          <p> $512</p>
+                      </div>
+                  </div>
+                  <div class="prog-head">
+                      <h6>Money</h6>
+                      <p>90%</p>
+                  </div>
+                  <div class="progress money-progress">
+                    <div class="progress-bar " role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="prog-head">
+                    <h6>Product</h6>
+                    <p>85%</p>
+                </div>
+                <div class="progress product-progress">
+                  <div class="progress-bar " role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+              </div>
+        </div>
+          <div class="col-md-4">
+              <div class="box height-500 about-orders-box">               
+                    <div class="orders-head flex-spaceBetween">
+                        <h5>Cash & Products Orders Received 2/8</h5>
+                        <p>2/8</p>
+                    </div>
+                    <div class="flex-spaceBetween">
+                        <div class="order-info">
+                            <h6>Cash - Home Delivery </h6>
+                            <h6>MTCN:HJSK412653 </h6>
+                            <p>Order Completed</p>
+                        </div>
+                        <div class="order-price-info">
+                            <h4>$9,076</h4>
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="flex-spaceBetween">
+                      <div class="order-info">
+                          <h6>Cash - Home Delivery </h6>
+                          <h6>MTCN:HJSK412653 </h6>
+                          <p>Order Completed</p>
+                      </div>
+                      <div class="order-price-info">
+                          <h4>$9,076</h4>
+                          <a href="#"><i class="fas fa-eye"></i></a>
+                      </div>
+                  </div>
+                  <div class="flex-spaceBetween">
+                      <div class="order-info">
+                          <h6>Cash - Home Delivery </h6>
+                          <h6>MTCN:HJSK412653 </h6>
+                          <p> Available</p>
+                      </div>
+                      <div class="order-price-info">
+                          <h4>$9,076</h4>
+                          <a href="#"><i class="fas fa-edit"></i></a>
+                      </div>
+                  </div>
+               
+
+              </div>
+        </div>
+          <div class="col-md-4">
+            <div class="box height-500 about-orders-box ">               
+                <div class="orders-head flex-spaceBetween">
+                    <h5>Latest Transactions</h5>
+                    
+                </div>
+                <div class="flex-spaceBetween border-btm">
+                    <div class="order-info">
+                        <h6>Withdrawal of $200</h6>
+                        <h6>Given To:Alex Hunt </h6>
+                        
+                    </div>
+                    <div class="order-price-info pull-right">
+                        <h6>MTCN:ASDA654</h6>
+                        <span>08:47 AM</span>
+                    </div>
+                </div>
+                <div class="flex-spaceBetween border-btm">
+                  <div class="order-info">
+                    <h6>Withdrawal of $200</h6>
+                    <h6>Given To:Alex Hunt </h6>
+                  </div>
+                  <div class="order-price-info pull-right">
+                    <h6>MTCN:ASDA654</h6>
+                    <span>08:47 AM</span>
+                  </div>
+              </div>
+              <div class="flex-spaceBetween border-btm">
+                  <div class="order-info">
+                    <h6>Withdrawal of $200</h6>
+                    <h6>Given To:Alex Hunt </h6>
+                  </div>
+                  <div class="order-price-info pull-right">
+                    <h6>MTCN:ASDA654</h6>
+                    <span>08:47 AM</span>
+                  </div>
+              </div>
+              <div class="flex-spaceBetween border-btm">
+                <div class="order-info">
+                  <h6>Withdrawal of $200</h6>
+                  <h6>Given To:Alex Hunt </h6>
+                </div>
+                <div class="order-price-info pull-right">
+                  <h6>MTCN:ASDA654</h6>
+                  <span>08:47 AM</span>
+                </div>
+            </div>
+            <div class="flex-spaceBetween border-btm">
+                <div class="order-info">
+                  <h6>Withdrawal of $200</h6>
+                  <h6>Given To:Alex Hunt </h6>
+                </div>
+                <div class="order-price-info pull-right">
+                  <h6>MTCN:ASDA654</h6>
+                  <span>08:47 AM</span>
+                </div>
+            </div>
+           
+
+          </div>
+        </div>
+      </div>
   </div>
       
     
@@ -234,6 +390,47 @@ var myDoughnutChart = new Chart(ctx, {
     },
    
 });
+
+// Bar chart
+
+var data = {
+  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug","Sep", "Oct" ,"Nov","Dec"],
+  datasets: [{
+    label: "dataset",
+    backgroundColor: "#3584D5",
+    borderColor: "rgba(255,99,132,1)",
+    borderWidth: 0,
+    hoverBackgroundColor: "rgb(53 132 213 / 59%)",
+    hoverBorderColor: "rgba(255,99,132,1)",
+    data: [65, 59, 20, 81, 56, 55, 20,10,20,1,30,90],
+  }]
+};
+
+var options = {
+  maintainAspectRatio: false,
+  scales: {
+    yAxes: [{
+      stacked: true,
+      gridLines: {
+        display: true,
+        color: "rgba(255,99,132,0.2)"
+      }
+    }],
+    xAxes: [{
+        barPercentage: 0.2,
+      gridLines: {
+        display: false,
+      }
+    }]
+  }
+};
+
+Chart.Bar('chart', {
+  options: options,
+  data: data,
+
+});
+
 
 
 </script>

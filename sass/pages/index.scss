@@ -47,3 +47,143 @@
 //     .box{flex:0.34}
 //     .box:not(:last-child) {margin-right: 2rem;}
 // }
+.height-500{height:500px}
+.chart-container{height:90%}
+.chart-heading{
+    display:flex; 
+    justify-content: space-between;
+    h4{
+        font-size: 2.4rem;
+        font-weight: 600;
+        color:$color-heading;
+    
+    }
+    select{   
+        background: #EEEEEE;
+        padding: 1rem 3rem 1rem 1rem;
+        border: 0;
+        border-radius: 5rem;
+    }
+
+}
+.user-info{
+  text-align:  center;
+  .user-img {
+    height: 60px;
+    width: 60px;
+    margin: 0px auto;
+    border-radius: 50%;
+    img{height:100%}
+}
+h5{
+    font-size: 2.2rem;
+    color:$color-heading;
+    margin: 2rem 0 -5px;
+}   
+p{
+    font-size:1.9rem;
+    color:$color-label;
+}
+}
+.trans-info{
+    display:flex;
+    justify-content: space-between;
+    margin-top:4rem;
+    .total-trans{
+        h6{font-size: 1.8rem;color:$color-heading;font-weight:600}
+        p{text-align: center;font-size: 4.8rem;color:$color-label;font-weight:600}
+    }
+}
+.prog-head{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    h6{font-size: 1.4rem;color:$color-heading;font-weight:600;margin:0}
+    p{font-size: 1.4rem;color:$color-label;line-height: 1;}
+}
+.progress.money-progress {
+    height: 0.5rem;
+    .progress-bar{background-color: $color-blue}
+}
+
+.progress.product-progress {
+    height: 0.5rem;
+    .progress-bar{background-color: $color-blue}
+    .progress-bar{background-color: $color-green;}
+}
+
+.flex-spaceBetween{
+    display:flex;
+    justify-content: space-between;
+}
+.orders-head{
+    h5 , p{
+        font-size: 2.2rem;
+        color:$color-heading;
+        font-weight: 600;;
+    }
+    p{color:$color-label;letter-spacing:1px}
+}
+
+    .order-price-info {
+    text-align: center;
+}
+.order-info {
+    h6,p{
+        font-size: 1.8rem;
+        color:$color-heading;
+        font-weight:600;
+        margin-bottom: 1rem;
+    }
+    p{
+        
+        color:$color-label;
+    }
+  
+    
+}
+
+.order-price-info{
+     h4{
+        font-size: 2.4rem;
+        color:$color-heading;
+        font-weight:600;
+        margin-bottom: 1rem
+    }
+    a{
+        i{
+            background: $color-green;
+            color: #ffffff;
+            border-radius: 50px;
+            padding: 1rem;
+            font-size: 1.6rem;
+        }
+        i.fa-edit{
+            background: $color-label;
+        }
+    }
+    h6{
+        font-size: 1.8rem;
+        color:$color-heading;
+        font-weight:600;
+        margin-bottom: 1rem;
+    }
+    span{
+        font-size: 1.7rem;
+        color:$color-label;
+        
+    }
+}
+.order-price-info.pull-right{
+    text-align:right
+}
+.about-orders-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.border-btm{
+    border-bottom: 1px solid #f4f8fd;
+    
+
+}

@@ -981,4 +981,171 @@ span.amount-color {
   font-weight: 600;
 }
 
+.height-500 {
+  height: 500px;
+}
+
+.chart-container {
+  height: 90%;
+}
+
+.chart-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.chart-heading h4 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #2e3d62;
+}
+.chart-heading select {
+  background: #EEEEEE;
+  padding: 1rem 3rem 1rem 1rem;
+  border: 0;
+  border-radius: 5rem;
+}
+
+.user-info {
+  text-align: center;
+}
+.user-info .user-img {
+  height: 60px;
+  width: 60px;
+  margin: 0px auto;
+  border-radius: 50%;
+}
+.user-info .user-img img {
+  height: 100%;
+}
+.user-info h5 {
+  font-size: 2.2rem;
+  color: #2e3d62;
+  margin: 2rem 0 -5px;
+}
+.user-info p {
+  font-size: 1.9rem;
+  color: #a3a1bc;
+}
+
+.trans-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.trans-info .total-trans h6 {
+  font-size: 1.8rem;
+  color: #2e3d62;
+  font-weight: 600;
+}
+.trans-info .total-trans p {
+  text-align: center;
+  font-size: 4.8rem;
+  color: #a3a1bc;
+  font-weight: 600;
+}
+
+.prog-head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.prog-head h6 {
+  font-size: 1.4rem;
+  color: #2e3d62;
+  font-weight: 600;
+  margin: 0;
+}
+.prog-head p {
+  font-size: 1.4rem;
+  color: #a3a1bc;
+  line-height: 1;
+}
+
+.progress.money-progress {
+  height: 0.5rem;
+}
+.progress.money-progress .progress-bar {
+  background-color: #3584d5;
+}
+
+.progress.product-progress {
+  height: 0.5rem;
+}
+.progress.product-progress .progress-bar {
+  background-color: #3584d5;
+}
+.progress.product-progress .progress-bar {
+  background-color: #93c144;
+}
+
+.flex-spaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orders-head h5, .orders-head p {
+  font-size: 2.2rem;
+  color: #2e3d62;
+  font-weight: 600;
+}
+.orders-head p {
+  color: #a3a1bc;
+  letter-spacing: 1px;
+}
+
+.order-price-info {
+  text-align: center;
+}
+
+.order-info h6, .order-info p {
+  font-size: 1.8rem;
+  color: #2e3d62;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.order-info p {
+  color: #a3a1bc;
+}
+
+.order-price-info h4 {
+  font-size: 2.4rem;
+  color: #2e3d62;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.order-price-info a i {
+  background: #93c144;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+.order-price-info a i.fa-edit {
+  background: #a3a1bc;
+}
+.order-price-info h6 {
+  font-size: 1.8rem;
+  color: #2e3d62;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.order-price-info span {
+  font-size: 1.7rem;
+  color: #a3a1bc;
+}
+
+.order-price-info.pull-right {
+  text-align: right;
+}
+
+.about-orders-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.border-btm {
+  border-bottom: 1px solid #f4f8fd;
+}
+
 /*# sourceMappingURL=style.css.map */
